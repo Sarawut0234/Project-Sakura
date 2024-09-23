@@ -1,0 +1,653 @@
+body {
+    background-image: url('../assets/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alert button {
+    background-color: #f5c6cb;
+    color: #721c24;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alert button:hover {
+    background-color: #f1b0b7;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+.login-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.orders-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.orders-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 12px 15px;
+}
+
+.orders-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.orders-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.orders-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.orders-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.orders-table img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.products-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.products-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.products-table th,
+.products-table td {
+    padding: 12px 15px;
+}
+
+.products-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.products-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.products-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.products-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.products-table img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: to make the content stand out */
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.menu-table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.menu-table td {
+    padding: 10px;
+}
+
+.chat-box {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+}
+
+.timestamp {
+    font-size: 0.8em;
+    color: #888;
+    margin-left: 10px;
+}
+
+.countdown {
+    font-weight: bold;
+    color: red;
+    margin-left: 10px;
+}
+
+
+    .container {
+        padding: 20px;
+    }
+
+    /* Chat Button */
+    .chat-button {
+        background-color: #007bff;
+        color: white;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        font-weight: bold;
+        z-index: 1001; /* Ensure it's on top */
+    }
+
+    /* Popup Button */
+    .popup-button {
+        background-color: green;
+        color: white;
+        position: fixed;
+        bottom: 70px;
+        right: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        font-weight: bold;
+        z-index: 1001; /* Ensure it's on top of other elements */
+    }
+
+    /* Music Button Styling */
+    .music-button {
+        background-color: #dce535; /* สีพื้นหลังของปุ่มเล่นเพลง */
+        color: white; /* สีตัวหนังสือ */
+        position: fixed;
+        bottom: 120px; /* เลื่อนปุ่มขึ้นจากปุ่มอื่น */
+        right: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        font-weight: bold;
+        z-index: 1001; /* Ensure it's on top of other elements */
+    }
+
+    .music-button:hover {
+        background-color: #c5cd21; /* สีปุ่มเมื่อ hover */
+    }
+
+    .music-button:active {
+        background-color: #dce535; /* สีปุ่มเมื่อคลิก */
+    }
+
+    .music-button .fas {
+        margin-right: 8px; /* เพิ่มช่องว่างระหว่างไอคอนและข้อความ */
+    }
+
+   
+
+    /* Chat Popup */
+    .chat-popup {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        max-height: 400px;
+        background: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1002; /* Ensure it's on top of other popups */
+        overflow: hidden;
+        border-radius: 5px;
+        background: linear-gradient(white, #f9f9f9);
+    }
+
+    .chat-popup-header {
+        background: #007bff;
+        color: white;
+        padding: 10px;
+        font-size: 1.2em;
+        text-align: center;
+        cursor: pointer;
+        border-bottom: 1px solid #ccc;
+        position: relative;
+    }
+
+    .chat-popup-header .close-btn {
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 2.1em;
+        color: red;
+        background: none;
+        border: none;
+    }
+
+    .chat-box {
+        padding: 10px;
+        height: 280px;
+        overflow-y: auto;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .chat-message {
+        margin-bottom: 10px;
+    }
+
+    .color-palette {
+        display: flex;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .color-box {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        border-radius: 5px;
+    }
+
+    .selected {
+        border-color: #000;
+    }
+
+    .countdown {
+        font-size: 0.8em;
+        color: gray;
+    }
+
+    .timestamp {
+        font-size: 0.8em;
+        color: #888;
+    }
+
+    @keyframes moveUpDown {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+        100% { transform: translateY(0); }
+    }
+
+    .logo {
+        width: 120px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        box-shadow: none;
+        animation: moveUpDown 2s ease-in-out infinite;
+    }
+
+    /* Styling for ID, Role, and Welcome message with red text and pink glowing border */
+    .user-info {
+        color: red;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px pink;
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Align ID, Role, and Welcome message */
+    .user-section {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .user-section p {
+        margin: 10px 0;
+    }
+
+    /* Popup for Online Admins */
+    .popup {
+        display: none;
+        position: fixed;
+        top: 20%;
+        right: 20px;
+        width: 250px;
+        background: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1001;
+        overflow: hidden;
+        border-radius: 5px;
+        background: linear-gradient(white, #f9f9f9); /* Light gradient background */
+    }
+
+    .popup-header {
+        background: #007bff;
+        color: white;
+        padding: 10px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .popup-close {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        color: red;
+        font-size: 2.1em;
+        cursor: pointer;
+    }
+
+    .online-users-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .online-users-table th, .online-users-table td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .online-users-table th {
+        background-color: #f4f4f4;
+    }
+
+    /* Styling for chat messages as chat bubbles */
+    .popup-message {
+        background-color: #f1f1f1; /* Background color of chat bubble */
+        border: 1px solid #ddd; /* Border color of chat bubble */
+        border-radius: 10px; /* Rounded corners */
+        padding: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        display: inline-block;
+        max-width: 90%;
+        word-wrap: break-word;
+    }
+
+    .popup-message:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #f1f1f1; /* Background color of chat bubble */
+    }
+
+    /* Container for chat input and send button */
+    .chat-input-container {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #ccc;
+        padding: 5px;
+    }
+
+    #message {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    .send-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: bold;
+        margin-left: 10px;
+        transition: background-color 0.3s;
+    }
+
+    .send-button:hover {
+        background-color: #0056b3;
+    }
+
+    .send-button:active {
+        background-color: #004494;
+    }
+
+    /* Styling for Action Buttons */
+    .action-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #007bff; /* สีพื้นหลังของปุ่ม */
+        color: white; /* สีตัวหนังสือ */
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .action-button:hover {
+        background-color: #0056b3; /* สีปุ่มเมื่อ hover */
+    }
+
+    .action-button:active {
+        background-color: #004494; /* สีปุ่มเมื่อคลิก */
+    }
+
+    /* Styling for the Logout Button */
+    .logout-button {
+        background-color: #dc3545; /* สีพื้นหลังของปุ่มออกจากระบบ */
+    }
+
+    .logout-button:hover {
+        background-color: #c82333; /* สีปุ่มออกจากระบบเมื่อ hover */
+    }
+
+    .logout-button:active {
+    background-color: #a71d2a; /* สีปุ่มออกจากระบบเมื่อคลิก */
+    }
+
+    /* Center the button container */
+    .button-container {
+    text-align: center;
+    }
+
+    .sakura {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
+    }
+
+    .petal {
+        position: absolute;
+        background: url('../assets/images/petal.png'); /* ใช้รูปดอกซากุระ */
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        opacity: 0.8;
+        animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+        0% {
+            transform: translateY(0) rotate(0deg);
+        }
+        100% {
+            transform: translateY(100vh) rotate(720deg);
+        }
+    }
+
+    /* Glow effect for welcome message */
+    .welcome-message {
+        color: #e94097;
+        padding: 5px;
+        border-radius: 5px;
+        display: block;
+        margin: 10px 0;
+        font-size: 2em; /* Adjust size as needed */
+        text-align: center; /* Center the text */
+    }
